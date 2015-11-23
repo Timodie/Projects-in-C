@@ -1,0 +1,11 @@
+Running suite Public Assignment Tests
+public-test.c:69:P:Public Tests:test_words_next_word:0: Passed
+public-test.c:77:P:Public Tests:test_wset_new:0: Passed
+public-test.c:84:P:Public Tests:test_wset_free:0: Passed
+public-test.c:100:P:Public Tests:test_wset_add:0: Passed
+public-test.c:115:P:Public Tests:test_wset_fast_add:0: Passed
+public-test.c:161:P:Public Tests:test_wset_remove:0: Passed
+public-test.c:141:P:Public Tests:test_wset_exists:0: Passed
+public-test.c:173:P:Public Tests:test_wset_freq:0: Passed
+Results for all suites run:
+100%: Checks: 8, Failures: 0, Errors: 0
