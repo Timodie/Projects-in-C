@@ -1,0 +1,2 @@
+Running suite(s): Private Assignment Tests
+100%: Checks: 16, Failures: 0, Errors: 0
