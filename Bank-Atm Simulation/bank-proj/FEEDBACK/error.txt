@@ -1,0 +1,5 @@
+############################################################
+# NOTE: THESE TESTS TAKE SOME TIME TO COMPLETE. BE PATIENT #
+############################################################
+Running suite(s): Private Assignment Tests
+100%: Checks: 50, Failures: 0, Errors: 0

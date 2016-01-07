@@ -1,0 +1,22 @@
+Account 0: 5315
+Account 1: 5000
+Account 2: 5000
+Account 3: 4855
+Account 4: 4521
+Account 5: 5000
+Account 6: 5000
+Account 7: 5118
+Account 8: 4862
+Account 9: 4899
+Account 10: 5055
+Account 11: 4748
+Account 12: 4999
+Account 13: 4902
+Account 14: 5000
+Account 15: 4890
+Account 16: 5125
+Account 17: 4689
+Account 18: 5000
+Account 19: 5111
+ATM error: unknown account! ATM Out of service
+ATM error: unknown account! ATM Out of service
