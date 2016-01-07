@@ -1,0 +1,43 @@
+gcc -std=c99 -g -c src/cpu.c -o src/cpu.o
+gcc -std=c99 -g -c src/cache.c -o src/cache.o
+gcc -std=c99 -g -c src/lru.c -o src/lru.o
+gcc -std=c99 -g -c src/bits.c -o src/bits.o
+gcc -std=c99 -g -c src/main.c -o src/main.o
+gcc src/cpu.o src/cache.o src/lru.o src/bits.o src/main.o -o cache-sim -lm
+gcc -std=c99 -g -c src/test-sim.c -o src/test-sim.o
+gcc src/cpu.o src/cache.o src/lru.o src/bits.o src/soln-bits.o src/test-sim.o -o test-sim -lm
+====================================================
+Test 1 PASSED: cache is not NULL
+Test 2 PASSED: cache->set_bits properly initialized
+Test 3 PASSED: cache->block_bits properly initialized
+Test 4 PASSED: cache->line_count properly initialized
+Test 5 PASSED: cache->set_count properly initialized
+Test 6 PASSED: cache->block_size properly initialized
+Test 7 PASSED: cache->sets is not NULL
+Test 8 PASSED: line_count in Set is properly initialized
+Test 9 PASSED: Your LRU queues have been properly initialized
+Test 10 PASSED: Your LRU queues appear to have the correct number of nodes (4)
+Test 11 PASSED: lines in Set is not NULL
+Test 12 PASSED: accessed and block_size in Line are properly initialized
+====================================================
+Test 13 PASSED: get_set is returning the proper set value
+Test 14 PASSED: get_line is returning the proper tag value
+Test 15 PASSED: get_byte is returning the proper byte index
+====================================================
+hits: 803213 misses: 1354 evictions: 1290 hrate: 0.998317 mrate: 0.001683
+Test 16 PASSED: the number of misses (cpu->cold+cpu->conflict) is correct (1354)
+Test 17 PASSED: the number of hits (cpu->hits) is correct (803213)
+Test 18 PASSED: the number of evictions (cpu->conflict) is correct (1290)
+hits: 2016836 misses: 421934 evictions: 421918 hrate: 0.826989 mrate: 0.173011
+Test 19 PASSED: the number of misses (cpu->cold+cpu->conflict) is correct (421934)
+Test 20 PASSED: the number of hits (cpu->hits) is correct (2016836)
+Test 21 PASSED: the number of evictions (cpu->conflict) is correct (421918)
+hits: 787666 misses: 22104 evictions: 22088 hrate: 0.972703 mrate: 0.027297
+Test 22 PASSED: the number of misses (cpu->cold+cpu->conflict) is correct (22104)
+Test 23 PASSED: the number of hits (cpu->hits) is correct (787666)
+Test 24 PASSED: the number of evictions (cpu->conflict) is correct (22088)
+====================================================
+You passed 24 out of 24 tests.
+You scored 52/52 points.
+Nice Work!
+====================================================
