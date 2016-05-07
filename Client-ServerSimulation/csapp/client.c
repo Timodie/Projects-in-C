@@ -17,7 +17,7 @@ if(client > 0){
 FILE*fp;
             fp = Fdopen(client, "a+");
             printf("Sending spire id to server\n");
-            fprintf(fp,"28249996");
+            fprintf(fp,"0000000");
 
 char *line = NULL;
 size_t count;
